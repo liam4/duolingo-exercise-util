@@ -1,9 +1,5 @@
 @import url(http://db.onlinewebfonts.com/c/1b4cd06b44538d529084b3599f708643?family=MuseoSansW01-Rounded300);
 
-* {
-  color: red !important;
-}
-
 body {
   color: rgb(153, 153, 153);
   font-family: 'MuseoSansW01-Rounded300', sans-serif;
