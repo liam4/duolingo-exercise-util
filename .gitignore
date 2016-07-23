@@ -1,0 +1,6 @@
+.env
+
+page/*.html
+page/*.md
+
+node_modules
