@@ -50,7 +50,7 @@ function doit(name) {
     .then(skill => throwIfUndefined(skill, 'Skill not found'))
     .then(skill => [skill.name, skill.explanation])
     .then(etc => (res('💾  ' + name), etc))
-    .then(([name, explanation]) => `<link rel="stylesheet" href="main.css"><meta charset='utf8'><h1>${name}</h1>\n${explanation}`)
+    .then(([name, explanation]) => `<meta charset='utf8'><link rel="stylesheet" href="main.css"><title>${name}</title><h1>${name}</h1>\n${explanation}`)
     .then((htmlExplanation) => {
       return Promise.all([
         fsp.writeFile(`page/${name}.md`, toMarkdown(htmlExplanation)),
